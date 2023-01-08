@@ -24,7 +24,7 @@ func main() {
 	// 4 WHEN you visit at localhost/healthz, you shou be response 200
 	sm.HandleFunc("/healthz", healthz)
 
-	if err := http.ListenAndServe("localhost:80", sm); err != nil {
+	if err := http.ListenAndServe(":80", sm); err != nil {
 		log.Fatalf("I am sorry, Start server Failed!: %s", err.Error())
 	}
 }
