@@ -1,2 +1,2 @@
 # istio
-云原生服务网格的学习
+learn go && do exercise
